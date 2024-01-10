@@ -298,7 +298,6 @@ const Page = ({
                   />
                 </Tooltip>
               </Field>
-
               {errors.submit && <Alert severity="error">{errors.submit}</Alert>}
               <Button
                 fullWidth
