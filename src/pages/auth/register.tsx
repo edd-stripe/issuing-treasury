@@ -241,6 +241,7 @@ const Page = ({
                   United States
                 </MenuItem>
               </Field>
+<<<<<<< HEAD
               <Divider />
               <FormLabel>What kind of app are you building?</FormLabel>
               <Field
@@ -297,6 +298,13 @@ const Page = ({
                     disabled={values.country == "US"}
                   />
                 </Tooltip>
+=======
+              <Field as={Select} label="Use case" name="useCase" fullWidth>
+                <MenuItem value="embedded_finance">Embedded Finance</MenuItem>
+                <MenuItem value="expense_management">
+                  Expense Management
+                </MenuItem>
+>>>>>>> c0ba2b8 (collect and store use case at onboarding)
               </Field>
               {errors.submit && <Alert severity="error">{errors.submit}</Alert>}
               <Button
