@@ -19,6 +19,6 @@
     "no-console": "warn"
   },
   "eslint.workingDirectories": [
-    { "directory": "./_base", "changeProcessCWD": true },
+    { "directory": "./embedded_finance", "changeProcessCWD": true },
   ]
 }
