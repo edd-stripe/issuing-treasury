@@ -88,13 +88,8 @@ const register = async (req: NextApiRequest, res: NextApiResponse) => {
       email: email,
       password: hashedPassword,
       accountId: account.id,
-<<<<<<< HEAD
       useCase,
       country,
-=======
-      country: country,
-      useCase: useCase,
->>>>>>> ce0d1f5 (collect and store use case at onboarding)
     },
   });
 
