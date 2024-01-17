@@ -55,10 +55,15 @@ export const authOptions: NextAuthOptions = {
         const stripe = stripeClient(platform);
         const account = await stripe.accounts.retrieve(token.accountId);
         const businessName = account.business_profile?.name;
+        const country = account.country;
         const currency = account.default_currency;
 
         if (businessName != undefined) {
           token.businessName = businessName;
+        }
+
+        if (country != undefined) {
+          token.country = country;
         }
 
         if (currency != undefined) {
