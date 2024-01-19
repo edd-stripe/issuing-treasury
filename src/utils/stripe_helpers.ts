@@ -276,10 +276,6 @@ export async function getAuthorizationDetails(
 export async function getBalance(stripeAccount: StripeAccount) {
   const { accountId, platform } = stripeAccount;
   const stripe = stripeClient(platform);
-<<<<<<< HEAD
-
-=======
->>>>>>> f15f649 (couple stripe accounts to platforms)
   const balance = await stripe.balance.retrieve({
     stripeAccount: accountId,
   });
