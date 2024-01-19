@@ -108,7 +108,6 @@ export const authOptions: NextAuthOptions = {
       session.country = token.country;
       session.useCase = token.useCase;
       session.currency = token.currency;
-      session.useCase = token.useCase;
 
       return session;
     },
